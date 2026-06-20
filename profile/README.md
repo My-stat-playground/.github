@@ -39,15 +39,15 @@ The thread that connects everything we do: better trials, reached faster, withou
 >
 > [![DOI](https://img.shields.io/badge/DOI-10.1158%2F2767--9764.CRC--25--0393-b31b1b?style=flat-square)](https://doi.org/10.1158/2767-9764.CRC-25-0393)
 
-Minimal residual disease (MRD) has been backed by the FDA's Oncology Drugs Advisory Committee as an endpoint for accelerated approval in multiple myeloma — but the evidence base behind that decision predates a wave of recent trials. We introduce an **AI-assisted framework that automatically finds the relevant studies and extracts the numbers they report**, then re-runs the surrogacy analysis on an up-to-date evidence set. The result confirms a **moderate trial-level** and a **strong patient-level** association between MRD-negativity at complete response and survival outcomes — a worked example of AI keeping a regulatory-grade analysis current.
+Minimal residual disease (MRD) has been backed by the FDA's Oncology Drugs Advisory Committee as an endpoint for accelerated approval in multiple myeloma — but the evidence base behind that decision predates a wave of recent trials. We introduce an **AI-assisted framework that automatically finds the relevant studies and extracts the numbers they report**, then re-runs the surrogacy analysis on an up-to-date evidence set. The result confirms a **moderate trial-level** and a **strong patient-level** association between MRD-negativity at complete response and survival outcomes.
 
 ---
 
 ## 🚀 What we're building
 
-### 🔍 PUREvidence — systematic reviews, on autopilot (with a human at the wheel)
+### 🔍 PUREvidence — systematic reviews, on autopilot (with a human-in-the-loop)
 
-Systematic literature reviews are the backbone of clinical evidence — and a notorious time sink. **PUREvidence** is a multi-agent system that automates the two most labor-intensive steps, **screening** and **data extraction**, while routing only the genuinely ambiguous cases to a human reviewer. It also turns a one-time review into a *living* one: freeze the eligibility query, re-run it against an up-to-date trial registry, and recover the original evidence plus whatever is new.
+Systematic literature reviews are the backbone of clinical evidence. **PUREvidence** is a multi-agent system that automates the two most labor-intensive steps, **screening** and **data extraction**, while routing only the genuinely ambiguous cases to a human reviewer. It also turns a one-time review into a *living* one: freeze the eligibility query, re-run it against an up-to-date trial registry, and recover the original evidence plus whatever is new.
 
 - A panel of **heterogeneous screening agents** debates each trial, with an inspector agent driving rounds of self-revision until they converge.
 - **Specialized extraction agents** (treatment, subgroup, endpoint) re-read each source to self-correct, and tag every value with a confidence label.
@@ -63,7 +63,7 @@ Most statistical analysis needs **individual patient data (IPD)** — but IPD is
 - Generates **matching covariates** (age group, sex, biomarker status, ...) by constrained optimization, so the synthetic data supports *covariate-adjusted* analyses — something prior reconstruction methods couldn't do.
 - Useful for **synthetic control arms**, sample-size planning, and strengthening pooled and subgroup meta-analyses.
 
-> 📝 *Manuscript:* "SynthIPD: Assumption-Lean Synthetic Individual Patient Data Generation" — Zhao, Ren, Zhai, Hu, Ma, Xie, Shi — **major revision at *JASA***
+> 📝 *Manuscript:* "SynthIPD: Training-free Synthetic Individual Patient Data Generation" — Zhao, Ren, Zhai, Hu, Ma, Xie, Shi — **major revision at *JASA***
 
 ---
 
